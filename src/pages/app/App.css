@@ -1,0 +1,262 @@
+.app-container {
+    padding: 10px;
+    height: 100vh;
+    background-color: #eee;
+    overflow-x: hidden;
+}
+
+.appeared {
+    opacity: 1;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes appear {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, .2);
+    border-color: transparent;
+}
+
+.logo>div {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #B43E5A;
+}
+
+.col-md-2,
+.col-md-8,
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.top-bar {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+    border-color: transparent;
+}
+
+.card-inner {
+    padding: 10px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-title {
+    font-size: 20px;
+    color: #888;
+}
+
+.weather-value {
+    font-size: 25px;
+    font-weight: bold;
+    color: #666;
+}
+
+.temp-value {
+    display: flex;
+    align-items: center;
+    color: #B43E5A;
+}
+
+.max-temp {
+    font-size: 25px;
+    color: #B43E5A;
+    opacity: 0.6;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+
+.degree {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.min-temp {
+    font-size: 15px;
+    color: #777;
+    margin-top: 21px;
+}
+
+.city {
+    font-weight: bold;
+}
+
+.divider {
+    height: 2px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+.default-text {
+    font-size: 18px;
+    color: #888;
+}
+
+.weather-day {
+    font-size: 25px;
+    font-weight: bold;
+    color: #B43E5A;
+}
+
+.weather-card {
+    height: 400px
+}
+
+.search-container {
+    z-index: 999;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #B43E5A;
+    border-width: 1px;
+    width: 100%;
+    height: 45px;
+    margin-right: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-container>div {
+    width: 100%;
+}
+
+.search-container>img {
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border-width: 0;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, .2);
+    padding-right: 10px;
+}
+
+.img-button {
+    height: 45px;
+    width: 45px;
+    background-color: #eee;
+    padding: 0;
+    border-width: 0;
+}
+
+.loading-app-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected>.img-button {
+    background-color: #fff;
+}
+
+.img-button>img {
+    padding: 10px;
+    height: 45px;
+    pointer-events: none;
+}
+
+.weather-image {
+    background-size: contain;
+    border: 0;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-right: 1px #eee solid;
+}
+
+.loading-container {
+    height: 100px;
+    padding: 10px;
+    align-self: center;
+}
+
+.daily-weather {
+    height: 97vh;
+    overflow-y: scroll;
+}
+
+.daily-weather::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.daily-weather::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.daily-weather::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.daily-weather>div {
+    background-color: #ECE8E8;
+    cursor: pointer;
+}
+
+.daily-weather>div:hover {
+    background-color: #fff
+}
+
+.daily-weather>.selected {
+    background-color: #fff;
+}

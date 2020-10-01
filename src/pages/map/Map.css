@@ -1,0 +1,9 @@
+.main-container{
+    height: 87vh;
+    border-radius: 10px;
+}
+.map-container {
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+}
